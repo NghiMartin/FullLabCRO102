@@ -56,7 +56,7 @@ export default function InputField({
           placeholder={label} 
           keyboardType={keyboardType} 
           value={value}
-          style={{ flex: 1, padding: 10, color: 'white'}}
+          style={{ flex: 1, padding: 10, color: '#59D5E0'}}
           onChangeText={onChangeText}/>
         )}
         <TouchableOpacity onPress={fieldButtonFunction}>
