@@ -63,7 +63,7 @@ export default function InputField({
           <Text style={{ color: '#AD40AF', fontWeight: '700' }}>{fieldButtonLabel}</Text>
         </TouchableOpacity>
       </View>
-      <View  >
+      <View>
         <Text style={{color: 'red', textAlign:'left', marginTop: error ? 10 : 0}}>{error}</Text>
       </View>
     </View>

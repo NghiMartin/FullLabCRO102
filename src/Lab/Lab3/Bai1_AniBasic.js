@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Animated, View } from "react-native";
+import { Animated, Button, View } from "react-native";
 
 export default function Bai1_AniBasic() {
     const animatedValue = useRef(new Animated.ValueXY({
@@ -7,19 +7,20 @@ export default function Bai1_AniBasic() {
       y: 100,
     })).current;
 
-    useEffect(() => {
-        Animated.timing(animatedValue, {
-            toValue:{
-                x: 200,
-                y: 200,
-               },
-            duration: 2000,        
-            useNativeDriver: false
-        }).start();
-    },[animatedValue]);
     
+   const handleCick=  () => {
+            Animated.timing(animatedValue, {
+                toValue:{
+                    x: 200,
+                    y: 200,
+                   },
+                duration: 2000,        
+                useNativeDriver: true
+            }).start();
+        }
     return (
-        <Animated.View
+        <View>
+             <Animated.View
             style={{
                 width: 100,
                 height: 100,
@@ -30,6 +31,12 @@ export default function Bai1_AniBasic() {
                 ],
                 backgroundColor: '#19b5fe'
             }}
-        />
+        >
+        </Animated.View>
+       <View style={{width:100, margin:20}}>
+       <Button onPress={handleCick} title="Click me" />
+       </View>
+        </View>
+       
     );
 }

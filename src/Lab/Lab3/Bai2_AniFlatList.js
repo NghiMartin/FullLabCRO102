@@ -3,7 +3,7 @@ import { View, Text, StatusBar, Dimensions, Image } from 'react-native';
 
 import VegaScrollList from './VegaScrollList';
 
-import { data   } from '../../../data';
+import { data } from '../../data/data';
 
 export default function Bai2_AniFlatList() {
   let { width } = Dimensions.get('window');

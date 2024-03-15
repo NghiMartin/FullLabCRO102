@@ -35,7 +35,7 @@ const VegaScrollItem = ({
 
   const opacity = position.interpolate({
     inputRange: [isDisappearing, isTop, isBottom, isAppearing],
-    outputRange: [0.1, 1, 1, 1], // Giảm opacity khi vuốt lên
+    outputRange: [0.1, 1, 1, 1], 
     extrapolate: 'clamp',
   });
 
