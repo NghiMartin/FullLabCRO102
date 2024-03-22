@@ -8,12 +8,12 @@ import { ImageCropPickerComponent, TrackPlayer } from './src/Lab/ImgPicker';
 import TrackPlayerApp from './src/Lab/ImgPicker/TrackPlayerApp';
 import ReducersQuery from './src/Lab/Lab6/ReducersQuery';
 import CounterScreen from './src/Lab/Lab6/CounterScreen';
-
+import FormData from './src/Lab/Lab6/formData';
 
 export default function App (){
   return (
     <Provider store={store}>
-      <ReducersQuery />
+      <FormData />
     </Provider>
   );
 };
