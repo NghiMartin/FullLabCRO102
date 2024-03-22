@@ -1,16 +1,19 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, Image, Button } from 'react-native';
-import Bai2_SectionView from './src/Lab/Lab1/Bai2_SectionView';
-import BottomSheetTest from './src/component/BottomSheetTest';
-import Bai2_AniFlatList from './src/Lab/Lab3/Bai2_AniFlatList';
-import TakeAphoto from './src/Lab/ImgPicker/TakeAphoto';
+import { Provider } from 'react-redux';
+import { store } from './src/store/store';
+import { Bai1_Custom, Bai2_SectionView, Bai3_CustomTextInput } from './src/Lab/Lab1';
+import { Bai1_AniBasic, Bai2_AniFlatList, MomoHeader } from './src/Lab/Lab3';
+import { Lab2_CustomProfile } from './src/Lab/Lab2';
+import { ImageCropPickerComponent, TrackPlayer } from './src/Lab/ImgPicker';
 import TrackPlayerApp from './src/Lab/ImgPicker/TrackPlayerApp';
-import Bai1_AniBasic from './src/Lab/Lab3/Bai1_AniBasic';
-import MomoHeader from './src/Lab/Lab3/MomoHeader';
+import ReducersQuery from './src/Lab/Lab6/ReducersQuery';
+import CounterScreen from './src/Lab/Lab6/CounterScreen';
+
 
 export default function App (){
   return (
-    <Bai2_AniFlatList/>
+    <Provider store={store}>
+      <ReducersQuery />
+    </Provider>
   );
-  
 };

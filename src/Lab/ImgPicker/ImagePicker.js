@@ -3,22 +3,6 @@ import { Alert, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } fr
 import ImageCropPicker from 'react-native-image-crop-picker';
 import { Video } from 'react-native-image-crop-picker';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  button: {
-    backgroundColor: 'blue',
-    marginBottom: 10,
-  },
-  text: {
-    color: 'white',
-    fontSize: 20,
-    textAlign: 'center',
-  },
-});
 
 const ImageCropPickerComponent = () => {
   const [image, setImage] = useState(null);
@@ -209,7 +193,7 @@ const ImageCropPickerComponent = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        {image ? renderAsset(image) : null}
+        {image ? renderAsset(image) : renderAsset({uri: 'https://cdn3.iconfinder.com/data/icons/flat-avatars-3/512/Flat_avatars_svg-10-1024.png'})}
         {images ? images.map((i, idx) => (
           <View key={idx}>{renderAsset(i)}</View>
         )) : null}
@@ -218,9 +202,9 @@ const ImageCropPickerComponent = () => {
       <TouchableOpacity onPress={() => pickSingleWithCamera(false)} style={styles.button}>
         <Text style={styles.text}>Select Single Image With Camera</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => pickSingleWithCamera(false, 'video')} style={styles.button}>
+      {/* <TouchableOpacity onPress={() => pickSingleWithCamera(false, 'video')} style={styles.button}>
         <Text style={styles.text}>Select Single Video With Camera</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity onPress={() => pickSingleWithCamera(true)} style={styles.button}>
         <Text style={styles.text}>Select Single With Camera With Cropping</Text>
       </TouchableOpacity>
@@ -242,14 +226,34 @@ const ImageCropPickerComponent = () => {
       <TouchableOpacity onPress={() => pickMultiple()} style={styles.button}>
         <Text style={styles.text}>Select Multiple</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => cleanupImages()} style={styles.button}>
+      {/* <TouchableOpacity onPress={() => cleanupImages()} style={styles.button}>
         <Text style={styles.text}>Cleanup All Images</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => cleanupSingleImage()} style={styles.button}>
         <Text style={styles.text}>Cleanup Single Image</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };
 
 export default ImageCropPickerComponent;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    backgroundColor: 'orange',
+    marginBottom: 10,
+    padding: 6,
+    borderRadius: 10
+
+  },
+  text: {
+    color: 'white',
+    fontSize: 20,
+    textAlign: 'center',
+  },
+});

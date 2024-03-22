@@ -4,7 +4,7 @@ import InputField from "../../component/InputField";
 import { useState } from "react";
 import Footer from "../Lab2/Footer";
 
-export default function Lab1_Custom() {
+export default function Bai1_Custom() {
   const [username, setUsername] = useState('');
 
   return(

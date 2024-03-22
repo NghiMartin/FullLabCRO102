@@ -9,10 +9,16 @@ export default function HeaderBar({
             <Image 
             source={{ uri: "https://seekicon.com/free-icon-download/chevron-left-circle_1.png"}}  style={styles.Image}  /> 
             <Text>{title}</Text>
-            <Image
+         {image ? (
+             <Image
         source={{uri : image }}
         style={styles.Image}
       />
+         ) : 
+    (
+      <View style={styles.Image}></View>
+    )
+         }
         </View>
     )
 }

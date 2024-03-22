@@ -1,0 +1,109 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/app_icons.ttf",
+      "sha1": "18e5fe2f93c853bbb495975f04df56438d595de5"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Black.ttf",
+      "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-ExtraBold.ttf",
+      "sha1": "4b5c0750f073abd576413a0898d3b95adaf199c8"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-ExtraLight.ttf",
+      "sha1": "85af6582a7e6155917c605f9d3fed68c02b23b06"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Thin.ttf",
+      "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    },
+    {
+      "path": "src/assets/images/fruit/apple-01.jpg",
+      "sha1": "1ef1d7ff2644ae8cc018825f4bf1058b0fabcaea"
+    },
+    {
+      "path": "src/assets/images/fruit/bananas-01.jpg",
+      "sha1": "9c2fd020fa6825eb5193c186c335ca248f8f616b"
+    },
+    {
+      "path": "src/assets/images/fruit/meat.jpg",
+      "sha1": "1ce8615681cda242f4ee7075102383052abbe866"
+    },
+    {
+      "path": "src/assets/images/fruit/spinach.png",
+      "sha1": "d27bbbca3ad71ec4bdd7d0b8b0a54d940b3dd2eb"
+    },
+    {
+      "path": "src/assets/images/fruit/tomato.jpg",
+      "sha1": "ea3b40b1d6ee7aaf483ac37fb3b673935cf7ff7d"
+    },
+    {
+      "path": "src/assets/images/momo/avatar.png",
+      "sha1": "f7d37358e933ebcc71c974f44f92dddf4a056d0f"
+    },
+    {
+      "path": "src/assets/images/momo/bell.png",
+      "sha1": "6ad21e090eb0e69302ab5e0ec7011ada31a67c73"
+    },
+    {
+      "path": "src/assets/images/momo/deposit-circle.png",
+      "sha1": "7f51ab9dde3c8581322669e50ce660322242f5c8"
+    },
+    {
+      "path": "src/assets/images/momo/deposit.png",
+      "sha1": "18b93eee4157b70c9ad24b76a9a412cb5a891397"
+    },
+    {
+      "path": "src/assets/images/momo/qr-circle.png",
+      "sha1": "485f88a39e2d2680e796e0b7bfbb1f2255206258"
+    },
+    {
+      "path": "src/assets/images/momo/qr.png",
+      "sha1": "6d2e576fbb9af369655c70707ae7d69b0b976ac7"
+    },
+    {
+      "path": "src/assets/images/momo/scan-circle.png",
+      "sha1": "077d1f246ff9289b38daa85c2f112b55ab8abd67"
+    },
+    {
+      "path": "src/assets/images/momo/scan.png",
+      "sha1": "ee61155e3ef88544858beb3e4fb3412f2adc12fc"
+    },
+    {
+      "path": "src/assets/images/momo/search.png",
+      "sha1": "f58ecdda7c1c09274cc7472c7a322e5290f6d08e"
+    },
+    {
+      "path": "src/assets/images/momo/withdraw-circle.png",
+      "sha1": "7080926d0d01d0b62f1b930e5332dbf7246959e2"
+    },
+    {
+      "path": "src/assets/images/momo/withdraw.png",
+      "sha1": "6a2d31f4f44609a9c124e731ebefc58e76a26123"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Button, View } from "react-native";
+import { Alert, Button, View } from "react-native";
 import HeaderProfile from "./HeaderProfile";
 import Body from "./Body";
 import Footer from "./Footer";
@@ -23,7 +23,10 @@ export default function Lab2_CustomProfile() {
     };
 
   const updateInfor = () => {
-    setUser({name: valueInput1, avt: valueInput2});
+    if(!valueInput1 || !valueInput2) {
+        Alert.alert('Nhập đủ thông tin');
+    }else setUser({name: valueInput1, avt: valueInput2});
+
   }
     return(
         <View style={{height:'100%', position:'relative'}}>
