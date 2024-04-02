@@ -1,84 +1,56 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Pressable } from 'react-native';
-import { BORDERRADIUS, COLORS } from '../theme/theme';
-import Icon from 'react-native-vector-icons/Entypo';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { COLORS, FONTFAMILY } from '../assets'; 
 
-export default function InputField({
-  label,
-  inputType,
-  keyboardType,
-  value,
-  fieldButtonLabel,
-  fieldButtonFunction,
-  onChangeText,
-  error =''
-}) {
-  const [passwordVisible, setPasswordVisible] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
-  };
+const InputField = (props) => {
+  const { placeholder, onChangeText, password, value, error } = props;
+  const [hidePassword, setHidePassword] = useState(password);
 
   return (
-    <View style={{
-    marginBottom: error ? 10 : 0,
-    }}>
-      <View
-        style={[{
-          flexDirection: 'row',
-          borderColor: error ? 'red' : COLORS.secondaryGreyHex, // Đổi màu border thành đỏ nếu có lỗi
-          width: '100%',
-          borderWidth: 2,
-          padding: 5,
-          marginTop: 25,
-          borderRadius: BORDERRADIUS.radius_10,
-          alignItems: 'center',
-        }]}>
-
-        {inputType === 'password' ? (
-          <View style={styles.passwordContainer}>
-            <TextInput
-              placeholder={label}
-              keyboardType={keyboardType}
-              value={value}
-              style={{ flex: 1, padding: 10, color: 'white'}}
-              secureTextEntry={!passwordVisible}
-              onChangeText={onChangeText}
-              placeholderTextColor={COLORS.secondaryGreyHex} 
-            />
-            <TouchableOpacity style={styles.eyeIcon} onPress={togglePasswordVisibility}>
-              <Icon name={passwordVisible ? 'eye-with-line' : 'eye'} size={20} color= {COLORS.secondaryGreyHex}/>
-            </TouchableOpacity>            
-          </View>
-        ) : (
-          <TextInput 
-          placeholderTextColor={COLORS.secondaryGreyHex}
-          placeholder={label} 
-          keyboardType={keyboardType} 
+    <View>
+      <View style={{ ...styles.container, borderColor: error ? COLORS.RED : COLORS.GRAY }}>
+        <TextInput
+          style={{ color: COLORS.GRAY, fontFamily: FONTFAMILY.poppins_regular, width: '100%' }}
+          placeholderTextColor={COLORS.GRAY}
+          placeholder={placeholder}
+          onChangeText={onChangeText}
+          secureTextEntry={hidePassword}
           value={value}
-          style={{ flex: 1, padding: 10, color: '#59D5E0'}}
-          onChangeText={onChangeText}/>
+        />
+        {password && (
+          <Icon
+            onPress={() => setHidePassword(!hidePassword)}
+            name={hidePassword ? 'eye-outline' : 'eye-off-outline'}
+            style={{ color: COLORS.GRAY, fontSize: 22, marginLeft: -30 }}
+          />
         )}
-        <TouchableOpacity onPress={fieldButtonFunction}>
-          <Text style={{ color: '#AD40AF', fontWeight: '700' }}>{fieldButtonLabel}</Text>
-        </TouchableOpacity>
       </View>
-      <View>
-        <Text style={{color: 'red', textAlign:'left', marginTop: error ? 10 : 0}}>{error}</Text>
-      </View>
+      {error && (
+        <Text style={styles.styleError}>{error}</Text>
+      )}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-
-  passwordContainer: {
-    flex: 1,
+  container: {
     flexDirection: 'row',
+    paddingHorizontal: 5,
+    width: '100%',
+    height: 48,
+    borderRadius: 8,
+    marginTop: 10,
+    borderWidth: 1,
+    marginBottom: 10,
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
-  eyeIcon: {
-    position: 'absolute',
-    right: 10,
+  styleError: {
+    color: COLORS.RED,
+    fontFamily: FONTFAMILY.poppins_bold,
+    fontSize: 11,
   },
 });
+
+export default InputField;

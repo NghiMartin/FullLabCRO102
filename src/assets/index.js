@@ -5,6 +5,12 @@ const COLORS = {
   red: 'red',
   gray: 'gray'
 }
+const AppImages = {
+  background_plant: require('./shape/backgroundPlant.png'),
+  facebook_icon: require('./icons/facebook.png'),
+  google_icon: require('./icons/google.png'),
+  splash_screen: require('./shape/splash_screen.png')
+};
 
  const FONTFAMILY = {
   poppins_black: 'Poppins-Black',
@@ -40,5 +46,5 @@ const COLORS = {
   radius_25: 25,
 };
 
-  export {  COLORS ,FONTFAMILY, BORDERRADIUS ,FONTSIZE};
+  export {  COLORS ,FONTFAMILY, BORDERRADIUS ,FONTSIZE, AppImages};
   

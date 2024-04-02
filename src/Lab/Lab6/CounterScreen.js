@@ -37,12 +37,12 @@ const CounterScreen = () => {
       }>
         Counter Value: {counterValue}</Text>
       <View style={{ flexDirection: 'row', marginTop: 20 }}>
-        <CustomButton title="Multiply by 2" onPress={handleMultiply} />
-        <CustomButton title="Increment" onPress={handleIncrement} />
+        <CustomButton label="Multiply by 2" onPress={handleMultiply} />
+        <CustomButton label="Increment" onPress={handleIncrement} />
       </View>
       <View style={{ flexDirection: 'row', marginTop: 10 }}>
-        <CustomButton title="Decrement" onPress={handleDecrement} />
-        <CustomButton title="Reset" onPress={handleReset} />
+        <CustomButton label="Decrement" onPress={handleDecrement} />
+        <CustomButton label="Reset" onPress={handleReset} />
       </View>
     </View>
   );

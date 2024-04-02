@@ -5,6 +5,11 @@ module.exports = {
             ios: null,
           },
         },
+          'react-native-google-signin': {
+            platforms: {
+              android: null
+            }
+          }
       },
     project : {
         ios: {},

@@ -2,8 +2,8 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const pokemonApi = createApi({
     reducerPath: 'pokemon',
-    baseQuery: fetchBaseQuery({baseUrl: 'https://pokeapi.co/api/v2/'}),
-    // baseQuery: fetchBaseQuery({baseUrl: 'http://172.21.3.218:3000/'}),
+    // baseQuery: fetchBaseQuery({baseUrl: 'https://pokeapi.co/api/v2/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://reqres.in/api/'}),
 
     endpoints: (builder) => ({
         getPokemonByName: builder.query({
@@ -11,7 +11,7 @@ export const pokemonApi = createApi({
         }),
         signup: builder.mutation({
             query: (data) => ({
-                url: 'user',
+                url: 'users',
                 method: 'POST',
                 body: data
             })

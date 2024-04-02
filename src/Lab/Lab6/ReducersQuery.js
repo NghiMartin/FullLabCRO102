@@ -62,7 +62,7 @@ export default function ReducersQuery() {
                 )}
                 </>
             )}
-            <CustomButton title='Click me!' onPress={handleClick} />
+            <CustomButton label={'Click me'} onPress={handleClick}  />
         </View>
     );
 }

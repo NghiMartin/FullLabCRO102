@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9945529722",
+    "firebase_url": "https://fulllab-cro102-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fulllab-cro102",
+    "storage_bucket": "fulllab-cro102.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9945529722:android:32b42ad8a20630222deac3",
+        "android_client_info": {
+          "package_name": "com.cr0102"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9945529722-kl7vk40f7h5e2ulhcrsrf4oresbb7vn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cr0102",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "9945529722-ke66tlsm6aic7445c6raicjrhavo0p11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbW9iwQKHvd8B2owIeGLi-IJSmMABH7yA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9945529722-ke66tlsm6aic7445c6raicjrhavo0p11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
